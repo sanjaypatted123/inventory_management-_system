@@ -1,0 +1,46 @@
+2. Order Management
+
+
+You’ll also build an order system where you can:
+* Place a new order (it should check if enough stock is available before confirming)
+* Cancel an order (if canceled, restore stock levels)
+* List all orders
+Each order should have:
+* A unique order ID
+* One or more items (product ID + quantity)
+* Total price
+* Status (pending, processed, or cancelled)
+* Created timestamp
+
+Additional Functionality
+* Implement a polling mechanism that checks every 1 minute for orders that are still “pending” and automatically cancels them if they’re older than a minute.
+* Add logging: any time a product is added, updated, or deleted, or an order is placed/cancelled, log it with a timestamp.
+
+
+steps:
+
+
+placing an order:
+
+function place_order{
+    look oredr details
+    for loop for items in orders
+    check the stock
+    
+    if quantity is not enough{
+        return 'not enough stock'
+    }
+    order_id = math.random for unique ID
+    for loop for order items:
+    
+    
+    total=product with price multiplication
+
+    orders[order_id] push the orders here
+
+    subtract with the stock
+
+
+    
+    alert('oredr placed')
+}
