@@ -1,0 +1,9 @@
+simple working logic of project
+
+step 1 -- access dom elements 
+step 2 -- create arrays for products ,orders,and logs
+step 3 -- write the functions code for
+                                --create or update and delete products 
+                                --edit the products(read only)
+step 4 -- create render function to add the products on screen 
+step 5 -- write other functions like loging activity and updating log UI
