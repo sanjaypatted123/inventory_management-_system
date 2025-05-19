@@ -1,7 +1,3 @@
-let products = [];
-let orders = [];
-let logs = [];
-
 //accessing dom elements
 const productForm = document.getElementById('product-form');
 const productList = document.getElementById('product-list');
@@ -9,6 +5,11 @@ const searchInput = document.getElementById('search-input');
 const orderForm = document.getElementById('order-form');
 const orderList = document.getElementById('order-list');
 const logList = document.getElementById('log-list');
+
+//declare arrays
+let products = [];
+let orders = [];
+let logs = [];
 
 //logging the itmes or products
 function logActivity(message) {
@@ -94,7 +95,9 @@ function editProduct(id) {
 //debounce function
   function debounce(func, delay) {
     let timeout;
-    return function(...args) {
+
+    //return function  takes arguments
+    return function(...args) {  
       clearTimeout(timeout);
       timeout = setTimeout(() => func.apply(this,args), delay);
     };
