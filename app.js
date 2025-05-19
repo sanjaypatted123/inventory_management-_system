@@ -120,6 +120,20 @@ const debouncedSearch = debounce(e => {
     );
     renderProducts(filtered);
   }, 300);
+
+  function placeOrder(e) {
+    e.preventDefault();
+  
+    const productId = document.getElementById('order-product-id').value;
+    const quantity = parseInt(document.getElementById('order-quantity').value);
+    const product = products.find(p => p.id === productId);
+    
+    if (!product || product.stock < quantity) {
+        alert('Invalid product ID or insufficient stock');
+        return;
+    }
+}
+  
   
 //event listeners here 
 productForm.addEventListener('submit', addOrUpdateProduct);

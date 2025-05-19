@@ -7,3 +7,5 @@ step 3 -- write the functions code for
                                 --edit the products(read only)
 step 4 -- create render function to add the products on screen 
 step 5 -- write other functions like loging activity and updating log UI
+step 6 -- create the debounce function and use it in search-input
+step 7 -- now coming to place order and polling concepts 
